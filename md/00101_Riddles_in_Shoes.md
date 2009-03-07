@@ -36,9 +36,7 @@ The **Riddles in Shoes** exercise can be completed in 5 easy steps:
 
 Okay, let's start explaining the code step by step!
 
-
 <br><br><hr color=green>
-
 
 Step 1: Open Shoes Window
 ------------------------
@@ -64,7 +62,8 @@ Step 1: Open Shoes Window
 **Summary of Step 1:** Run the following snippet.
 
 	# step1.rb
-	Shoes.app :width => 400, :height => 400, :title => 'Step 1', :resizable => false do
+	Shoes.app :width => 400, :height => 400, :title => 'Step 1',
+	          :resizable => false do
 	  background crimson..gold, :angle => 90
 	end
 
@@ -73,7 +72,6 @@ Step 1: Open Shoes Window
 ![step1.png](http://github.com/ashbb/code_review/raw/master/img/step1.png)
 
 <br><br><hr color=green>
-
 
 Step 2: Lay out titles and elements
 ----------------------------------
@@ -106,13 +104,11 @@ Step 2: Lay out titles and elements
 	  10.times{|i| star(100+ 30*i, 80, 12, 10, 7)}
 	end
 
-
 **step2.png**
 
 ![step2.png](http://github.com/ashbb/code_review/raw/master/img/step2.png)
 
 <br><br><hr color=green>
-
 
 Step 3: Show a riddle and create an input answer area
 ----------------------------------------------------
@@ -153,7 +149,8 @@ Step 3: Show a riddle and create an input answer area
 	Riddles =<<-EOS
 	What letter is a drink? --> t
 	What has nothing but a head and a tail? --> coin
-	What is it that by losing an eye has nothing left but a nose? --> noise
+	What is it that by losing an eye has nothing left but a nose? \
+	--> noise
 	EOS
 	Nums = (0..2).sort_by{rand}
 	
@@ -163,7 +160,8 @@ Step 3: Show a riddle and create an input answer area
 	    @q.text, = Riddles.to_a[num].split(' --> ')
 	  end
 	  
-	  @q = tagline '', :left => 20, :top => 130, :width => 360, :stroke => green
+	  @q = tagline '', :left => 20, :top => 130, :width => 360,
+	               :stroke => green
 	  @you = edit_line :left => 20, :top => 310, :width => 200
 	  button 'OK', :left => 225, :top => 310 do
 	    set_riddle
@@ -176,7 +174,6 @@ Step 3: Show a riddle and create an input answer area
 ![step3.png](http://github.com/ashbb/code_review/raw/master/img/step3.png)
 
 <br><br><hr color=green>
-
 
 Step 4: Move down the star
 -------------------------
@@ -219,7 +216,6 @@ Step 4: Move down the star
 
 <br><br><hr color=green>
 
-
 Step 5: Play Riddles in Shoes
 ----------------------------
 - Finish the game after answering all riddles.
@@ -232,12 +228,13 @@ Step 5: Play Riddles in Shoes
 
 	Line 49, 50. Show `good job` and `how unlucky`.
 
-
 <br><br><hr color=red>
 
 
+Fin!
+----
 We finished the 'Riddles in Shoes' exercise!.
---------------
+
 Let's enjoy Ruby programming with Shoes! :-D
 
 

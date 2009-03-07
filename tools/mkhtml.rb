@@ -18,7 +18,7 @@ open('../html/index.html', 'w'){|f| f.puts b.to_html}
 style_css = IO.read('./style.css')
 
 Dir.glob("../md/*.md").each do |mfile|
-  lines = IO.readlines mfile
+  lines = IO.readlines mfile 
   hfile = '../html/' + mfile.split('/').last.sub('.md', '.html')
   open(hfile, 'w') do |f|
     lines.each do |line|

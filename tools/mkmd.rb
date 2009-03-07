@@ -4,6 +4,11 @@
 require 'easy_ebook'
 include EasyEBook
 
+INFO_LINKS = IO.readlines('inner_links.mdown').collect do |line|
+  n = line.index('[')
+  line[n..-1] unless n.nil?
+end - [nil]
+
 def mk_link i, num, name
   fname = num + '_' + name.gsub(/[\&\#\!\(\)\\\/\:\*\?\"\<\>\| ]/, '_') + '.md'
   open('../md/' + fname, 'w'){|f| f.puts name, '-' * name.length} unless File.exist?('../md/' + fname)
@@ -40,6 +45,23 @@ def make_page_link name
   "[#{fname[6..-4]}](#{PATH + '/md/' + fname})"
 end
 
+def make_info nums
+  lines = []
+  #lines << '<table class=p border=1 cellspacing=0 cellpadding=3 width="85%"><td>'
+  lines << "\n<b>For more information</b>\n\n"
+  lines << make_info_links(nums.split(' '))
+  #lines << "\n</td></table>"
+end
+
+def make_info_links nums
+  nums.collect do |num|
+    '- ' + INFO_LINKS.select{|line| line[1,5] == num}.to_s
+  end
+end
+
+def make_hr color
+  "<br><br><hr color=#{color}>"
+end
 
 Dir.glob("../md/*.md").each do |file|
   lines = IO.readlines(file)
@@ -49,6 +71,8 @@ Dir.glob("../md/*.md").each do |file|
       line.sub(/^# *(.*\.rb)/){new_line = read_src($1)}
       line.sub(/^# *(.*\.(png|jpg))/){new_line = make_link($1)}
       line.sub(/^# *page *(prev|next|.*)/){new_line = make_page_link($1)}
+      line.sub(/^# *info (.*)/){new_line = make_info($1)}
+      line.sub(/^# *hr (.*)/){new_line = make_hr($1)}
       f.puts new_line
     end
   end

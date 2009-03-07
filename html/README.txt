@@ -1,11 +1,10 @@
-This subdirectory is used to store .html files created by the tool: mkhtml.rb and mkbightml.rb
+This subdirectory is used to store .html files created by the tool: mkhtml.rb
 
 Run the following command line on the console (terminal) window.
 
   C:\> ruby mkhtml.rb
-  C:\> ruby mkbightml.rb
 
-Then they'll create .html files here.
+Then it'll create .html files here.
 
 You can read whole eBook offline.
 And you can run whole sample codes, too. :-D
