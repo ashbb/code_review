@@ -1,16 +1,17 @@
 Riddles in Shoes
 ----------------
 
-I'd like to try explaining the code of **Riddle in Shoes**.
+Let's look at the code for the exercise **Riddle in Shoes**.
 
-- The code is [sample67.rb](http://github.com/ashbb/shoes_tutorial_html/blob/c80e826f21a68700d72d9de9e1fbd7556bc64471/src/sample67.rb) on the GitHub. I use the same line number in the blow explanation. e.g. Line 16-17
-- At first, see [the demo](http://www.rin-shun.com/rubylearning/shoes/riddles_in_shoes.swf.html) created by CamStudio.
+- The full code is available on GitHub as
+  [sample67.rb](http://github.com/ashbb/shoes_tutorial_html/blob/c80e826f21a68700d72d9de9e1fbd7556bc64471/src/sample67.rb) on the GitHub. This documents references the line numbers from said file.
+- Before reading this document, please watch [the demo](http://www.rin-shun.com/rubylearning/shoes/riddles_in_shoes.swf.html) created by CamStudio.
 
 **sample67.png**
 
 ![sample67.png](http://github.com/ashbb/code_review/raw/master/img/sample67.png)
 
-We can creat this program by the following 5 steps.
+The **Riddles in Shoes** exercise can be completed in 5 easy steps:
 
 1. Open Shoes Window
 	- Window's width and height are both 400 pixel.
@@ -19,16 +20,16 @@ We can creat this program by the following 5 steps.
 	- Color the surface of the window with a horizontal gradation.
 2. Lay out titles and elements
 	- Show title 'Riddles in Shoes'.
-	- Show line under the title.
+	- Show a line under the title.
 	- Show subtitles 'Question', 'Answer' and 'Score'.
 	- Align 10 stars under the line.
 3. Show a riddle and create an input answer area
-	- Click a button to show a riddle at random.
-	- Use these riddles.
+	- Click a button to show a random riddle.
+	- Use the provided riddles.
 4. Move down the star
 	- Click a button to smoothly move down a star for the question.
-	- If the answer is correct, align the star at the left-bottom.
-	- If the answer is incorrect, align the star at the right-bottom.
+	- If the answer is correct, align the star bottom left.
+	- If the answer is incorrect, align the star bottom right.
 5. Play Riddles in Shoes
 	- Finish the game after answering all riddles.
 	- Decorate the surface to your taste.
@@ -39,29 +40,28 @@ Okay, let's start explaining the code step by step!
 <br><br><hr color=green>
 
 
-Step1: Open Shoes Window
+Step 1: Open Shoes Window
 ------------------------
 
 - Window's width and height are both 400 pixel.
 
-	Line 16. Using `:width` and `:height` options.
+	Line 16. Use the `:width` and `:height` options.
 
 - Can't resize.
 
-	Line 16. Using `:resizable` option.
+	Line 16. Use the `:resizable` option.
 
 - Show your app name and revision number on the window's title bar.
 
-	Line 16. Using `:title` option. The app name is `Riddles` and revision number is `r0.5`. See the snapshot (sample67.png) to know the position of window's title bar.
+	Line 16. Use the `:title` option. The app name is `Riddles` and the revision number is `r0.5`. See the snapshot (sample67.png) to know the position of the window's title bar.
 
 - Color the surface of the window with a horizontal gradation.
 
-	Line 29. Using background method to color the surface of the window. But this code doesn't show the way to create a horizontal gradation. 
-I's a vertical gradation. See [sample 10](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00408_No.8_background.mdown). You can find `:angle` option.
+	Line 29. We use the background method to color the surface of our window. But the provided code uses a vertical instead of a horizontal gradation. Consult [sample 10](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00408_No.8_background.mdown) for use of the `:angle` option.
 
-	How many color methods dose Shoes define? See Shoes manual: [Colors List](http://help.shoooes.net/Colors.html).
+	How many color methods dose Shoes define? The answer can be found in the Shoes manual: [Colors List](http://help.shoooes.net/Colors.html).
 
-**Summary of Step1:** Run the following snippet.
+**Summary of Step 1:** Run the following snippet.
 
 	# step1.rb
 	Shoes.app :width => 400, :height => 400, :title => 'Step 1', :resizable => false do
@@ -75,27 +75,27 @@ I's a vertical gradation. See [sample 10](http://github.com/ashbb/shoes_tutorial
 <br><br><hr color=green>
 
 
-Step2: Lay out titles and elements
+Step 2: Lay out titles and elements
 ----------------------------------
 - Show title 'Riddles in Shoes'.
 
-	Line 30. Using `title` method with `:align` option.
+	Line 30. Use the `title` method with the `:align` option.
 
 - Show line under the title.
 
-	Line 31. Using `line` method with `:strokewidth` option.
+	Line 31. Use the `line` method with the `:strokewidth` option.
 
 - Show subtitles 'Question', 'Answer' and 'Score'.
 
-	Line 34, 38, 48. Using `subtitle` method with `:left` and `:top` option.
+	Line 34, 38, 48. Use the `subtitle` method with the `:left` and `:top` options.
 
 - Align 10 stars under the line.
 
-	Line 32, 53. Using `star` method to creat a star ten times. They are stored to the Array `stars`. See Shoes manual: [Art for Slots](http://help.shoooes.net/Art.html)
+	Line 32, 53. We use the `star` method for creating ten  stars which we'll store in an array called `stars`. See the Shoes manual for more information: [Art for Slots](http://help.shoooes.net/Art.html)
 
-	Why do the 10 stars have to create at the end of code (Line 53)? .... You can understand if you play the final version (sample67.rb). Please wait a little. ;-)
+	Why do the 10 stars have to be created at the end of the code (Line 53)? Please bear with us for a while, you will understand once you see the final version of the game (sample67.rb). 
 
-**Summary of Step2:** Run the following snippet.
+**Summary of Step 2:** Run the following snippet.
 
 	# step2.rb
 	Shoes.app :width => 400, :height => 400 do
@@ -114,41 +114,40 @@ Step2: Lay out titles and elements
 <br><br><hr color=green>
 
 
-Step3: Show a riddle and create an input answer area
+Step 3: Show a riddle and create an input answer area
 ----------------------------------------------------
-- Click a button to show a riddle at random.
-- Use these riddles.
+- Click a button to show a random riddle.
+- Use the provided riddles.
 
-For details.
-+ At first, prepare Riddles.	
++ First, let's prepare the Riddles.	
 
-	Line 2-13. Assign 10 lines (riddles) to `Riddles` constant.
+	Line 2-13. Assign 10 lines (riddles) to the constant `Riddles`.
 
-	Line 14. Assign 10 numbers (0-9) to `Nums` constant at random by using `sort_by` method.
+	Line 14. Assign 10 numbers (0-9) to the constant `Nums` by using the `Enumberable#sort_by` method.
 
 + Show a riddle at a time under the `Question`.
 
-	Line 35. Create a tagline object and assign it to `@q` instance variable. At first, it is empty. So, nothing will be shown on the Shoes window.
+	Line 35. Create a tagline object and assign it to the instance variable `@q`. At first this is empty, so nothing will be displayed in our app's window.
 
-	Line 36. Define `set_riddle` method. It works to show the next riddle everytime when it is called. 
+	Line 36. Define the `set_riddle` method. It shows a new riddle everytime it is called. 
 
-	Line 17-22. `set_riddle` method has 4 lines (line 18-21). but 2 lines (19, 21) are no need so far. They are explained later.
+	Line 17-22. The `set_riddle` method has 4 lines (line 18-21), of which 2 (lines 19 and 21) are not needed so far. They will be  explained later.
 
-+ Creat an input answer area.
++ Create an input answer area.
 
-	Line 39. Using `edit_line` method. A edit\_line object is assigned to `@you` instance variable. 
+	Line 39. Using the `edit_line` method, an edit\_line object is assigned to the instance variable `@you`. 
 
 + Click a button to show a riddle at random.
 
-	Line 40. Using `button` method with block. When you click the button, it execute the lines within the block. This button has 5 lines within the block. But all lines are no need so far except `set_riddle`.
+	Line 40. Here we use the `button` method with a block. When you click the button, it executes the codewithin the block. This block consists of 5 lines, of which only the `set_riddle` is needed for this step of the exercise.
 
-+ Add a little explanation about `set_riddle`
++ A more detailed explanation of the `set_riddle` method.
 
-	Line 18. Pick up a number from `Nums` constant and assign it to `@num` instance variable. Why using instance variable instead of local variable? There is no need to use instance variable so far. See the next step.
+	Line 18. Pick a number from the constant `Nums` and assign it to the instance variable `@num`. Although there is no benefit in using an instance variable over a local variable right now, there will be later as you will see in the next step.
 
-	Line 20. Select the `@num`th riddle from `Riddle` and split a question and an answer and assign them to `@q.text` and `@a`. The tagline object `@q` has `text=` setter method to replace the string of tagline.
+	Line 20. Select the `@num`th riddle from `Riddles`, split question and answer and assign them to `@q.text` and `@a` respectively. The tagline object `@q` uses the `text=` setter method to replace the string displayed by the tagline.
 
-**Summary of Step3:** Run the following snippet.
+**Summary of Step 3:** Run the following snippet.
 
 	# step3.rb
 	Riddles =<<-EOS
@@ -179,24 +178,24 @@ For details.
 <br><br><hr color=green>
 
 
-Step4: Move down the star
+Step 4: Move down the star
 -------------------------
 - Click a button to smoothly move down a star for the question.
 
-	Line 41. Assign the appropriate number of stars to local variable `s`. To get the appropriate number of stars for the current question, use instance variable `@num`.
+	Line 41. Assign the number of the appropriate star  to the local variable `s`. To get this number for the current question we use the instance variable `@num`.
 
-	Line 42. Using `animate` method to repeat the block. See Shoes manual: [Element Creation](http://help.shoooes.net/Element.html).
+	Line 42. Use the method `animate` to repeat the block. See Shoes manual: [Element Creation](http://help.shoooes.net/Element.html).
 
-	Line 43. Using `move` method to move down smoothly. See Shoes manual: [Common Methods](http://help.shoooes.net/Common.html).
+	Line 43. Use the method `move` to move down the star smoothly. See Shoes manual: [Common Methods](http://help.shoooes.net/Common.html).
 
-	Line 44. When the star moves down to the position 320pixel away from the top edge, the animation loop will be stopped (the animate object will be removed). Then will execute the `set_score` method and `set_riddle` methods.
+	Line 44. When the star moves gets to its position 320 pixels away from the top edge, the animation loop will be stopped (the animate object will be removed) and we execute the `set_score` and `set_riddle` methods.
 
-- If the answer is correct, align the star at the left-bottom.
-- If the answer is incorrect, align the star at the right-bottom.
+- If the answer is correct, align the star bottom left.
+- If the answer is incorrect, align the star bottom right.
 
-	Line 24-27. Defining the `set_score` method to move the star to the appropriate position. The instance variable `@i` and `@j` are using to hold the position at the end of the line.
+	Line 24-27. Defining the `set_score` method to move the star to the appropriate position. The instance variables `@i` and `@j` are used to hold the position at the end of the line.
 
-	See the next step about the `set_riddle` method Line 19 and 21.
+	See the next step about lines 19 and 21 of the `set_riddle` method.
 
 **Summary of Step4:** Run the following snippet.
 
@@ -221,7 +220,7 @@ Step4: Move down the star
 <br><br><hr color=green>
 
 
-Step5: Play Riddles in Shoes
+Step 5: Play Riddles in Shoes
 ----------------------------
 - Finish the game after answering all riddles.
 
@@ -237,7 +236,7 @@ Step5: Play Riddles in Shoes
 <br><br><hr color=red>
 
 
-That's a wrap.
+We finished the 'Riddles in Shoes' exercise!.
 --------------
 Let's enjoy Ruby programming with Shoes! :-D
 
