@@ -80,11 +80,14 @@ Step 1: Open Shoes Window
   The answer can be found in the below additional links.
 
 
+
 <b>For more information</b>
 
 - [00501 Open Shoes built-in manual and Shoes console window](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00501_Open_Shoes_built-in_manual_and_Shoes_console_window.mdown)
 - [00502 Output messages on the Shoes console window](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00502_Output_messages_on_the_Shoes_console_window.mdown)
 - [00505 Built-in Constants and methods](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00505_Built-in_Constants_and_methods.mdown)
+- [00516 Classes List and Colors List](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00516_Classes_List_and_Colors_List.mdown)
+
 
 <br><br><hr color=green>
 
@@ -105,9 +108,8 @@ Step 2: Lay out titles and elements
 
 - Align 10 stars under the line.
 
-	Line 32, 53. We use the `star` method for creating ten  stars which we'll store in an array called `stars`. See the Shoes manual for more information: [Art for Slots](http://help.shoooes.net/Art.html)
+	Line 32, 53. We use the `star` method for creating ten stars which we'll store in an array called `stars`. See the Shoes manual for more information: [Art for Slots](http://help.shoooes.net/Art.html)
 
-	Why do the 10 stars have to be created at the end of the code (Line 53)? Please bear with us for a while, you will understand once you see the final version of the game (sample67.rb). 
 
 **Summary of Step 2:** Run the following snippet.
 
@@ -123,6 +125,21 @@ Step 2: Lay out titles and elements
 **step2.png**
 
 ![step2.png](http://github.com/ashbb/code_review/raw/master/img/step2.png)
+
+
+**A Little Challenge**
+
+- Why do the 10 stars have to be created at the end of the code (Line 53)? <br>
+  Please bear with us for a while, you will understand once you see the final version of the game (sample67.rb). 
+- sample67.rb is a simple example which has no `stack` and `flow`. If you want to try another approach to lay out elements, read the Shoes manual: [Slots](http://help.shoooes.net/Slots.html) and the below additional informations.
+
+
+
+<b>For more information</b>
+
+- [00402 No.1 para](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00402_No.1_para.mdown)
+- [00403 No.2&3 stack and flow](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00403_No.2_3_stack_and_flow.mdown)
+
 
 <br><br><hr color=green>
 
