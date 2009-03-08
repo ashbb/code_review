@@ -12,14 +12,14 @@ Table of contents
 
 Change log:
 -----------
-- Mar 8th, 2009: Added some additional questions and links for Step 1 to 3.
+- Mar 8th, 2009: Added some additional questions and links for all Steps.
 - Mar 7th, 2009: Splited long line into two lines in the code for printing. Added information links to Shoes Tutorial Note. Deleted mkbightml feature.
 - Mar 7th, 2009: corrections
 - Mar 4th, 2009: first commit
 
 To do list:
 -----------
-Add some small challenges. (Suggested by Dave Lilley)
+Add some small challenges. (Suggested by Dave Lilley).... Done!
 
 Let's enjoy **Ruby with Shoes course** on [RubyLearning](http://www.rubylearning.org/)<br>
 ashbb

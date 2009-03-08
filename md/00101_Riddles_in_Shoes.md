@@ -134,7 +134,6 @@ Step 2: Lay out titles and elements
 - sample67.rb is a simple example which has no `stack` and `flow`. If you want to try another approach to lay out elements, read the Shoes manual: [Slots](http://help.shoooes.net/Slots.html) and the below additional informations.
 
 
-
 <b>For more information</b>
 
 - [00402 No.1 para](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00402_No.1_para.mdown)
@@ -222,6 +221,7 @@ Step 3: Show a riddle and create an input answer area
 - [00404 No.4 button](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00404_No.4_button.mdown)
 - [00406 No.6 edit\_line](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00406_No.6_edit__line.mdown)
 - [00526 The :state style](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00526_The__state_style.mdown)
+- [00536 edit_line with block](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00536_edit_line_with_block.mdown)
 
 
 <br><br><hr color=green>
@@ -236,7 +236,7 @@ Step 4: Move down the star
 
 	Line 43. Use the method `move` to move down the star smoothly. See Shoes manual: [Common Methods](http://help.shoooes.net/Common.html).
 
-	Line 44. When the star moves gets to its position 320 pixels away from the top edge, the animation loop will be stopped (the animate object will be removed) and we execute the `set_score` and `set_riddle` methods.
+	Line 44. When the star moves and gets to its position 320 pixels away from the top edge, the animation loop will be stopped (the animate object will be removed) and we execute the `set_score` and `set_riddle` methods.
 
 - If the answer is correct, align the star bottom left.
 - If the answer is incorrect, align the star bottom right.
@@ -265,6 +265,23 @@ Step 4: Move down the star
 
 ![step4.png](http://github.com/ashbb/code_review/raw/master/img/step4.png)
 
+
+**A Little Challenge**
+
+- What is the difference between `animate` and `every` ?
+
+- Start something with initial conditions, then stop and restart the same thing with other conditions. ... What shall I do? <br>
+  The answer can be found in the below additional links.
+
+
+
+<b>For more information</b>
+
+- [00517 start, stop and restart](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00517_start,_stop_and_restart.mdown)
+- [00519 arc and cap](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00519_arc_and_cap.mdown)
+- [00539 class definition outside of Shoes.app block](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00539_class_definition_outside_of_Shoes.app_block.mdown)
+
+
 <br><br><hr color=green>
 
 Step 5: Play Riddles in Shoes
@@ -278,6 +295,23 @@ Step 5: Play Riddles in Shoes
 	Line 21. Clear input area.
 
 	Line 49, 50. Show `good job` and `how unlucky`.
+
+**Summary of Step 5:** Run the [sample67.rb](http://github.com/ashbb/shoes_tutorial_html/blob/master/src/sample67.rb).
+
+
+**A Little Challenge**
+
+- The methods you don't attach them with a dot. ... What do you call them? <br>
+  The answer can be found in the Shoes manual: [Built-in Methods](http://help.shoooes.net/Built-in.html)
+
+- Why do the 10 stars have to be created at the end of the code (Line 53), again? <br>
+  The answer can be found in the below additional links.
+
+
+<b>For more information</b>
+
+- [00537 One way of layer manipulation](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00537_One_way_of_layer_manipulation.mdown)
+
 
 <br><br><hr color=red>
 
