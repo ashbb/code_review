@@ -4,7 +4,7 @@ Riddles in Shoes
 Let's look at the code for the exercise **Riddle in Shoes**.
 
 - The full code is available on GitHub as
-  [sample67.rb](http://github.com/ashbb/shoes_tutorial_html/blob/c80e826f21a68700d72d9de9e1fbd7556bc64471/src/sample67.rb) on the GitHub. This documents references the line numbers from said file.
+  [sample67.rb](http://github.com/ashbb/shoes_tutorial_html/blob/master/src/sample67.rb) on the GitHub. This documents references the line numbers from said file.
 - Before reading this document, please watch [the demo](http://www.rin-shun.com/rubylearning/shoes/riddles_in_shoes.swf.html) created by CamStudio.
 
 **sample67.png**
@@ -146,7 +146,7 @@ Step 2: Lay out titles and elements
 Step 3: Show a riddle and create an input answer area
 ----------------------------------------------------
 - Click a button to show a random riddle.
-- Use the provided riddles.
+- Use the provided [riddles](http://github.com/ashbb/code_review/blob/master/src/riddles.txt).
 
 + First, let's prepare the Riddles.	
 
@@ -160,7 +160,7 @@ Step 3: Show a riddle and create an input answer area
 
 	Line 36. Define the `set_riddle` method. It shows a new riddle everytime it is called. 
 
-	Line 17-22. The `set_riddle` method has 4 lines (line 18-21), of which 2 (lines 19 and 21) are not needed so far. They will be  explained later.
+	Line 17-22. The `set_riddle` method has 4 lines (line 18-21), of which 2 (lines 19 and 21) are not needed so far. They will be explained later.
 
 + Create an input answer area.
 
@@ -168,7 +168,7 @@ Step 3: Show a riddle and create an input answer area
 
 + Click a button to show a riddle at random.
 
-	Line 40. Here we use the `button` method with a block. When you click the button, it executes the codewithin the block. This block consists of 5 lines, of which only the `set_riddle` is needed for this step of the exercise.
+	Line 40. Here we use the `button` method with a block. When you click the button, it executes the code within the block. This block consists of 5 lines, of which only the `set_riddle` is needed for this step of the exercise.
 
 + A more detailed explanation of the `set_riddle` method.
 
@@ -205,6 +205,24 @@ Step 3: Show a riddle and create an input answer area
 **step3.png**
 
 ![step3.png](http://github.com/ashbb/code_review/raw/master/img/step3.png)
+
+
+**A Little Challenge**
+
+- If you want to create password fields, what style (option) should you use the `edit_line` method with? <br>
+  The answer can be found in the below additional links.
+
+- If you do not want the contents to be edited, hat style (option) should you use the `edit_box` method with? <br>
+  The answer can be found in the below additional links.
+
+
+
+<b>For more information</b>
+
+- [00404 No.4 button](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00404_No.4_button.mdown)
+- [00406 No.6 edit\_line](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00406_No.6_edit__line.mdown)
+- [00526 The :state style](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00526_The__state_style.mdown)
+
 
 <br><br><hr color=green>
 
@@ -266,7 +284,7 @@ Step 5: Play Riddles in Shoes
 
 Fin!
 ----
-We finished the 'Riddles in Shoes' exercise!.
+We finished the 'Riddles in Shoes' exercise!
 
 Let's enjoy Ruby programming with Shoes! :-D
 

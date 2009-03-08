@@ -12,7 +12,7 @@ Table of contents
 
 Change log:
 -----------
-- Mar 8th, 2009: Added some additional questions and links for Step 1 and 2.
+- Mar 8th, 2009: Added some additional questions and links for Step 1 to 3.
 - Mar 7th, 2009: Splited long line into two lines in the code for printing. Added information links to Shoes Tutorial Note. Deleted mkbightml feature.
 - Mar 7th, 2009: corrections
 - Mar 4th, 2009: first commit
