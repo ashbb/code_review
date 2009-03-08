@@ -57,7 +57,6 @@ Step 1: Open Shoes Window
 
 	Line 29. We use the background method to color the surface of our window. But the provided code uses a vertical instead of a horizontal gradation. Consult [sample 10](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00408_No.8_background.mdown) for use of the `:angle` option.
 
-	How many color methods dose Shoes define? The answer can be found in the Shoes manual: [Colors List](http://help.shoooes.net/Colors.html).
 
 **Summary of Step 1:** Run the following snippet.
 
@@ -71,7 +70,24 @@ Step 1: Open Shoes Window
 
 ![step1.png](http://github.com/ashbb/code_review/raw/master/img/step1.png)
 
+
+**A Little Challenge**
+
+- How many color methods dose Shoes define? <br>
+  The answer can be found in the Shoes manual: [Colors List](http://help.shoooes.net/Colors.html).
+- Use the constant `OPT` as the only one argument for Shoes.app. How do you define the `OPT`?
+- How do you get Shoes name `Raisins` ? <br>
+  The answer can be found in the below additional links.
+
+
+<b>For more information</b>
+
+- [00501 Open Shoes built-in manual and Shoes console window](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00501_Open_Shoes_built-in_manual_and_Shoes_console_window.mdown)
+- [00502 Output messages on the Shoes console window](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00502_Output_messages_on_the_Shoes_console_window.mdown)
+- [00505 Built-in Constants and methods](http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00505_Built-in_Constants_and_methods.mdown)
+
 <br><br><hr color=green>
+
 
 Step 2: Lay out titles and elements
 ----------------------------------
