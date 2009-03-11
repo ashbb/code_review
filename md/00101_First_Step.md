@@ -147,11 +147,24 @@ For sample 8
 
 For sample 9
 ------------
- # _why_sample9.rb
+	# _why_sample9.rb
+	Shoes.app {
+	  @push = button "Push me"
+	  @note = para "Nothing pushed so far"
+	}
 
 **A Little Challenge**
 
-- now under construction...
+Can you activate the button from the keyboard? (using shortcuts Like you can in windows)
+
+What about setting up other buttons that become active or visible once the text appear that will change or toggle each effect when clicked eg one click makes the text bold same button 2nd time turns bold off.
+
+Ideas:
+
+- changes the font of the text (perhaps have a selection - say 4 and they get cycled through)
+- changes the font size.
+- puts text to italic, underline, superscript or subscript, line through
+- buttons that use built in functions (ie title, subtitle etc) as another option
 
 *Post your findings.*
 

@@ -14,15 +14,18 @@ Table of contents
 
 Change log:
 -----------
-- Mar 9th, 2009: Added a new chapter `First Step`.
-- Mar 8th, 2009: Added some additional questions and links for all Steps.
-- Mar 7th, 2009: Splited long line into two lines in the code for printing. Added information links to Shoes Tutorial Note. Deleted mkbightml feature.
-- Mar 7th, 2009: corrections
-- Mar 4th, 2009: first commit
+- Mar 11th, 2009: Added sample 9 of chapter 00101.
+- Mar 09th, 2009: Added a new chapter `First Step`.
+- Mar 08th, 2009: Added some additional questions and links for all Steps.
+- Mar 07th, 2009: Splited long line into two lines in the code for printing. Added information links to Shoes Tutorial Note. Deleted mkbightml feature.
+- Mar 07th, 2009: corrections
+- Mar 04th, 2009: first commit
 
 To do list:
 -----------
-- Create sample 9 of chapter 00101
+- Overall review.
+- Create an additional script call it 4A.
+- Create sample 9 of chapter 00101.... Done!
 - Add some small challenges. (Suggested by Dave Lilley).... Done!
 
 Let's enjoy **Ruby with Shoes course** on [RubyLearning](http://www.rubylearning.org/)<br>
