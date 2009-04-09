@@ -14,6 +14,7 @@ Table of contents
 
 Change log:
 -----------
+- Apr 09th, 2009: Added sample 4a chapter 00101.
 - Mar 11th, 2009: Added sample 9 of chapter 00101.
 - Mar 09th, 2009: Added a new chapter `First Step`.
 - Mar 08th, 2009: Added some additional questions and links for all Steps.
@@ -23,8 +24,8 @@ Change log:
 
 To do list:
 -----------
-- Overall review.
-- Create an additional script call it 4A.
+- Overall review..... Done!
+- Create an additional script call it 4A..... Done!
 - Create sample 9 of chapter 00101.... Done!
 - Add some small challenges. (Suggested by Dave Lilley).... Done!
 

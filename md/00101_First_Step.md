@@ -53,8 +53,14 @@ For samples 1 - 4
 **Note** any questions or problems post those as well as along with the error messages so we can see the error (we might not get the same error due to differing OSes or versions of OSes etc).
 
 
-For additional script call it 4A
---------------------------------
+For additional snippet call it sample 4a
+----------------------------------------
+	# sample4a.rb
+	Shoes.app do
+	  para 'Hello world!'
+	  debug 'Running Shoes on ' + RUBY_PLATFORM
+	end
+
 **A Little Challenge**
 
 - Using `alt` + `/` keys you get a debug screen pop up.
