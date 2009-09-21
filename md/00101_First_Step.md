@@ -1,6 +1,6 @@
 First Step
 ----------
-A good starting point for working with Shoes is [the tutorial](http://shoooes.net/tutorial/) written by **\_why**.
+A good starting point for working with Shoes is [the tutorial](http://github.com/ashbb/shoes_tutorial_walkthrough) written by **\_why**.
 
 If you want to experiment, you can copy and paste the 16 sample programs and run them one by one. Don't worry if you don't understand the code yet, just run it and see what happens to the app windows. Although the tutorial does have screenshots, running the samples and maybe playing around with them is a good start to Shoes programming. So do it now, it will help you a lot in understanding this tutorial you are reading right now.
 

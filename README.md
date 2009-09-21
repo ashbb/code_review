@@ -14,6 +14,7 @@ Table of contents
 
 Change log:
 -----------
+- Sep 21st, 2009: edited the link to the tutorial.   
 - Apr 09th, 2009: Added sample 4a chapter 00101.
 - Mar 11th, 2009: Added sample 9 of chapter 00101.
 - Mar 09th, 2009: Added a new chapter `First Step`.
